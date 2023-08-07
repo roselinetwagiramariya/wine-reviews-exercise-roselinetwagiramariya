@@ -27,7 +27,6 @@ def test_columns_exist():
 def test_values_exist(country_name, expected_count, expected_points):
     try:
         df = pd.read_csv(CSV_FILE)
-        # us_count = new_df.loc[new_df['country'] == "US"]['count'].iloc[0]
         assert df.loc[df['country'] == country_name]['count'].iloc[0] == expected_count
         assert df.loc[df['country'] == country_name]['points'].iloc[0] == expected_points
     except Exception as e:
