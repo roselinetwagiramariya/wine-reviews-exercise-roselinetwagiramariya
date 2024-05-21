@@ -15,3 +15,4 @@ summary_data.to_csv('data/reviews-per-country.csv', index=False)
 
 print("Summary data saved successfully!")
 
+
